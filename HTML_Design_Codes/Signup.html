@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!-- saved from url=(0087)file:///C:/Users/Dell/Desktop/Full%20Stack/HTML%20PRACTICE%20CODES/form_validation.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>Signup</title>
+	<style type="text/css">
+		*{
+
+		}
+		.body{
+			background-size: 120%;
+			text-align: center;
+			overflow: hidden;
+			align-content: center;
+			opacity: 0.5;
+		}
+		.signup {
+			width: 420px;
+        	height: 550px;
+        	box-shadow: 3px;
+        	margin-left: 900px;
+        	margin-top: 10px;
+			color: white;
+			box-shadow: 50%;
+			position: absolute;
+			align-content: center;
+			text-align: center;
+			box-sizing: border-box;
+			padding: 5px;
+			border: 5px;
+			border-radius: 40px;}
+		#aeroplane {
+			position: absolute;
+			width: 200px;
+		    height: 70px;
+		    -webkit-animation: movingplane 10s linear infinite;
+		    -moz-animation: movingplane 10s linear infinite;
+		    -o-animation: movingplane 10s linear infinite;
+		}
+		@keyframes movingplane {
+	0% { 
+        margin-left: 100%;
+        top:500px;
+    }
+    29% { 
+        margin-left: 50%; 
+        top: 50px; 
+        -webkit-transform: rotate(1deg);
+	    -moz-transform: rotate(1deg);
+        -ms-transform: rotate(1deg);
+	    transform: rotate(1deg);
+      
+    }
+    100% {
+        margin-left: -100%;
+        top: 300px;
+    }
+
+}
+		
+		.h1 {
+			text-align: center;
+			font-size: 22px;
+		}
+		.signup input[type="text"], input[type="password"], input[type="date"]
+		{
+		
+		border-bottom: 1px solid white;
+		opacity: 0.5S;
+		height: 30px;
+		width: 100%;
+		
+		font-size: 12px;
+		color: grey;
+		}
+		.signup input[type="submit"]
+		{
+		height: 40px;
+		background: tomato;
+		color: white;
+		font-size: 18px;
+		border-radius: 30px;
+		}
+		.signup input[type="submit"]:hover
+		{ cursor: pointer;
+		    background: ghostwhite;
+		    color: black;
+		}
+
+
+		
+		
+	</style>
+</head>
+<body background="./Signup_files/goa_beach.jpg">
+	<center><div id="aeroplane">
+		<img src="./Signup_files/air.png">
+	</div></center>
+	<center>
+	<div class="signup">
+		<h1>Sign Up Form</h1>
+		<center>
+			<p>First Name:
+				<input type="text" name="fname" required="" placeholder="Enter FirstName" id="fname"></p>
+				<p>Last Name :
+                   <input type="text" name="lname" required="" placeholder="Enter Lastname" id="lname">
+                  </p>
+          <p>Date of Birth :
+                 <input type="date" name="date" required="" placeholder="DD/MM/YYYY" id="date">
+              </p>
+              <p>Mobile No. :
+                 <input type="text" name="mobile" required="" placeholder="Enter Mobile No." id="mobilenumber">
+              </p>
+           <p>Username. :
+                 <input type="text" name="user" required="" placeholder="Enter Username." id="user"> 
+  	          </p>
+           <p> Password :
+                 <input type="password" name="pass" class="form-control" required="" placeholder="Enter Password" id="pass" autocomplete="off">
+  	          </p>
+          <p>Re-Enter Password :
+                 <input type="password" name="confirm" required="" placeholder="Re-Enter Password" id="conpass">
+              </p>
+              <input type="submit" name="submit" value="SUBMIT">
+        </center>
+		</div></center>
+	
+
+	
+
+</body></html>

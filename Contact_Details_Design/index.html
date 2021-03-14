@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" type="text/css" href="style/style.css">
+    <!-- Add font awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>Responsive Form</title>
+    </head>
+     <body>
+   <!-- contact section -->
+    <form id="contact-form " method="post" action="https://formspree.io/.......@gmail.com">
+         <section id="contact-section">
+           <div class="container">
+           	 <h2>Contact Us</h2>
+              <p>Email us and keep upto date with your latest news</p>
+             <div class="contact-form">
+
+                  <!-- First grid -->
+				 
+               <div>
+                 <i class="fa fa-map-marker"></i><span class="form-info">  192 City Delhi</span><br>
+                 <i class="fa fa-phone" > </i><span class="form-info">  +91 9811323493</span><br>
+                 <i class="fa fa-envelope"></i><span class="form-info">  abc12@Gmail.com</span>
+               </div>
+               
+                   <!-- second grid -->
+           <div>        
+             <form>
+               <input type="text" placeholder="Your Name" required>
+               <input type="text" placeholder="Last Name"><br>
+			   <input type="Number" placeholder="Phone" required><br>
+               <input type="Email" placeholder="Email" required><br>
+               <textarea name="message" placeholder="Message" rows="5" required></textarea><br>
+               <button class="submit" >Send Message</button> 
+             </form>   
+               </div>
+             </div>
+           </div>
+         </section>
+		 </form>
+<div class="footer-section">
+   	<h1>
+   		..............
+   		<br>
+   		<br>
+   		<a href="tel:000000000"><i class="fas fa-mobile-alt"></i> Contact Us :- +91-9012576999</a></li>
+   	</h1>
+    	 <div class="nav" align="left">
+   	<ul>
+   	<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+   	<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+   	<li><a href=""><i class="fab fa-twitter"></i></a></li>
+   	<li><a href=""><i class="fab fa-instagram"></i></a></li>
+   	<li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+   	<li><a href=""><i class="fab fa-telegram-plane"></i></a></li>
+   </ul>
+   </div>
+
+   	<h2>
+   		Copyright © 2020 ........... - All Rights Reserved.
+</h2>
+   	</div>
+    <script referer>
+      $('#contact-form').submit(function (e){
+        var name = document.getElementsById('inputName'),
+            phone = document.getElementsById('inputPhone'),
+            email = document.getElementsById('inputEmail'),
+            message = document.getElementsById('inputMessage');
+            if (!name.value || !phone.value || !email.value || !message.value) {
+                alertify.error('Please Check Your Entries')
+            } 
+            else {
+              $.ajax({
+                url:"https://formspree.io/amanaryachandi@gmail.com",
+                method:"POST",
+                data:$(this).serialize(),
+                dataType:"json"
+              });
+
+              e.preventDefault()
+              $(this).get(0).reset()
+              alertify.success('Message Sent')  
+              }
+      })
+</script>
+         
+     </body>
+</html>

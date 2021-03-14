@@ -1,0 +1,108 @@
+*{
+	padding: 0%;
+	margin: 0%;
+}
+body{
+	font-family: Arial, Helvetica, sans-serif;
+    background-size: 100%;
+}
+.header1{
+    background-color: #a2d9ce;
+	background-size: 100%;
+
+}
+.header1 img{
+	max-width:10%;
+	max-height: 25%
+   
+}
+.nav{
+	text-align: right;
+	margin-top: -60px;
+}
+.nav ul{
+	list-style-type: none;
+}
+.nav ul li{
+	display: inline;	
+}
+.nav ul li a{
+	color: darkslategrey;
+	display: inline-block;
+	font-size: 100%;
+	padding: 20px;
+	text-decoration: none;
+}
+.nav ul li a:hover{
+	background-color: skyblue;
+	text-shadow: 2px 2px 4px #000000;
+}
+.image-section{
+	padding-top: 0%;
+	margin-top: 0%;
+}
+
+.about-section {
+    padding: 40px;
+    text-align: center;
+    background-color: papayawhip;
+    color: darkblue;
+}
+
+.footer-section{
+	background-color: darkslategrey;
+	width: 100%;
+}
+.footer-section h1{
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 25px;
+	color: ghostwhite;
+	padding-top: 20px;
+}
+.footer-section h1 a{
+	font-size: 20px;
+	color: ghostwhite;
+	text-decoration: none;
+}
+
+.footer-section button[type=button] {
+	text-align: center;
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+.footer-section button[type=button] a{
+	text-decoration: none;
+    color: ghostwhite;
+    font-size:15px;
+}
+.footer-section button[type=button]:hover {
+    background-color: seagreen;
+}
+.footer-section h2{
+	font-family: sans-serif;
+	font-size: 17px;
+	color: ghostwhite;
+	padding: 30px;
+	padding-top: 10px;
+}
+.footer-section .nav{
+	text-align: right;
+	padding-top: 10px;
+}
+.footer-section .nav ul{
+	list-style-type: none;
+}
+.footer-section .nav ul li{
+	display: inline;	
+}
+.footer-section .nav ul li a{
+	color: cornsilk;
+	display: inline-block;
+	font-size: 138%;
+	padding: 10px;
+	text-decoration: none;
+}

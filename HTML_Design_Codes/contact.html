@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<title>contact</title>
+	<style type="text/css">
+		body{
+			background-color: rgb(0,255,0,0.2);
+
+			
+		}
+		
+		contact{
+			float: right;
+		 	padding: 20px;
+  			width: 30%;
+ 			height: 300px; 
+		}
+		
+		.contact input[type="submit"]
+		{
+		height: 30px;
+		background: rgba(255,0,0,0.3);
+		color: white;
+		font-size: 18px;
+		border-radius: 30px;
+		}
+		.contact input[type="submit"]:hover
+		{ cursor: pointer;
+		    background: rgba(255,0,0,0.5); ;
+		    color: white;
+		    text-align: center;
+		}
+		section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+		.contact {
+			margin-left: 120px;
+			width: 450px;
+        	height: 620px;
+        	box-shadow: 3px;
+        	margin-top: 5px;
+			color: rgba(128,0,0,0.8	);
+			position: absolute;
+			box-sizing: border-box;
+			padding: 5px;
+			border: 5px;
+			border-radius: 60px;
+		}
+		
+		.wapp{
+			margin-right: 175px;
+		}
+		.wapp button[type="click"]:hover{
+			background-color:rgba(255,0,0,0.5) ;
+		}
+		.wapp button[type="click"]{
+			background: rgba(255,0,0,0.3);
+		}
+		footer {
+  		text-align: center;
+  		margin-top: 200px;
+  		padding: 3px;
+  		background-color: rgba(255,0,0,0.3) ;
+  		color: white;
+  		position:scroll;
+  		left: 0;
+  		bottom: 0;
+  		width: 100%;
+  		height: 200px;
+
+}
+		header {
+  		background-color: rgba(255,0,0,0.3) ;
+  		color: white;
+  		position:scroll;
+  		left: 0;
+  		bottom: 0;
+  		width: 100%;
+  		height: 100px;
+		}
+
+		nav a{
+			float: left;
+			padding : 40px;
+			color: white;
+			}
+
+			nav img{
+				padding-left : 200px;
+				margin-top: 0px;
+				float : left;
+				max-width: 150px;
+				max-height: 120px;
+			}
+			.me a{
+				float: right;
+				padding: 40px;
+				color: white;
+				
+			}
+	</style>
+
+</head>
+<body link="#00000">
+	<header>
+		<nav>
+		<a href="HOME">HOME</a>
+		<a href="BLOG" >BLOG</a>
+		<a href="ABOUT">ABOUT</a>
+		<div class="HeaderLogoWrapper">
+		<img src="C:\Users\Dell\Desktop\Full Stack\UID.png"></div>
+		</nav>
+		<nav class="me">
+			<a href="REVIEW">REVIEW</a>
+			<a href="CONTACT">CONTACT US</a>
+		</nav>
+</header>
+<h1 style="font-family: arial; text-align: center; color: rgba(128,0,0,0.9);"><b>CONTACT US</b></h1>
+<section>
+	
+	<nav class="contact" style="left padding: 30px">
+		<h2> Get in Touch!</h3>
+		<form method="post">
+			<h3>
+			<p><b>Name:<br>
+				<input type="text" style="width: 120%; height: 50px" name="name" required placeholder="Name" id="fname" ></p>
+			<p><b>Email:<br>
+				<input type="text" style="width: 120%; height: 50px" name="mail" required placeholder="Email" id="Email"></p>
+			<p><b>Message:<br>
+				<textarea  style="width: 120%; height: 100px" rows="5" cols="50" name="Message" required placeholder="Message"></textarea></p></b>
+				<input type="submit" name="submit" style="width: 530px; margin: 0 auto;"/>
+			
+		</form>
+	</nav>
+
+<contact class="wapp">
+	<h2><p style="color: rgba(128,0,0,0.8); width: 115%;">You can send me a message or ask me a general question using this form. <br>
+		I will do my best to get back to you soon!</p>
+		<button style="border-radius: 20px; width: 110%" type="click">
+		<a href="whatsapp://send?text=Message!" style="font-size: 20px;color: white;"><i class="fa fa-whatsapp fa-5x" style="font-size: 20px;"></i>
+ Message Us Via WhatsApp</a></button></h2><br>
+ 	<h1 style="color: rgba(128,0,0,0.8)">
+ 	UID Technologies</h1>
+ 	<h2><p style="width: 115%;color: rgba(128,0,0,0.8)">Lakshmi Nagar, New Delhi,India</p>
+ 	<p style="width: 115% ;color: rgba(128,0,0,0.8)">Contact Us:-<a style="color: rgba(128,0,0,0.8)" href="tel:+91-7623451986">+91-7623451986</a></p>
+ 	<p style="width: 115%; color: rgba(128,0,0,0.8)">Email Id:-<a style="color: rgba(128,0,0,0.8)" href="mailto:uidtechnologiesin@gmail.com">uidtechnologiesin@gmail.com</a></p>
+</h2>
+</contact>
+</section>
+<footer>
+<div class="footer">
+	<a href="facebbok.com"><i class="fa fa-facebook" style="font-size:30px;color: white; padding: 10px;"></i></a>
+	<a href="instagram.com"><i class="fa fa-instagram" style="font-size:30px;color:white;padding: 10px"></i></a>
+	<a href="twitter.com"><i class="fa fa-twitter" style="font-size:30px;color:white;padding: 10px"></i></a>
+	<a href="linkedin.com"><i class="fa fa-linkedin" style="font-size:30px;color:white;padding: 10px"></i></a>
+	<a href="youtube.com"><i class="fa fa-youtube" style="font-size:30px;color:white;padding: 10px"></i></a>
+	<h2><center><b>UID Technologies</b></center></h3>
+	<p><center>Laxmi Nagar, New Delhi-110092</center></p>
+	<p style="href="tel:+91-7623451986"><center>+91-7623451986</center></p>
+	<p style="text-align: left; color: white; padding-left: 10px"><b>Copyright © 2020 UID Technologies - All Rights Reserved.<b></p>
+</div>
+</footer>
+</body>
+</html>
